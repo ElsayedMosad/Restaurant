@@ -7,6 +7,8 @@
 
   --constant-color: #069c54;
   --constant-pro-color: #048654;
+
+  --line-height: 1.6;
 }
 .dark {
   --main-color: #1d2521;
@@ -80,19 +82,23 @@ a {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1140px;
+    width: 1130px;
   }
 }
 .pad {
-  padding-top: 1em;
-  padding-bottom: 0.5em;
+  padding-top: 2em;
+  padding-bottom: 1em;
 }
 .but {
   color: #fff;
-  color: var(--constant-color);
+  background-color: var(--constant-color);
+  padding: 0.7em;
+  font-size: 1em;
+  border-radius: 0.3em;
+  text-transform: capitalize;
 }
 .but:hover {
-  color: var(--constant-pro-color);
+  background-color: var(--constant-pro-color);
 }
 .links {
   color: var(--text-color);
@@ -108,7 +114,9 @@ a {
   width: 100%;
   background-color: var(--main-color);
   z-index: 100;
-  box-shadow: 0px 2px 2px #54706529;
+}
+.header.shadow {
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
 }
 .header-container {
   display: flex;
@@ -121,11 +129,11 @@ a {
   display: block;
   padding: 1em 0;
 }
-.header .menu-toggle {
-  font-size: 1.6em;
+.header .nav-toggle {
+  font-size: 1.7em;
   color: var(--title-color);
 }
-.header .menu-links {
+.header .nav-links {
   position: fixed;
   top: -50%;
   background-color: var(--main-color);
@@ -133,57 +141,141 @@ a {
   left: 0;
   transition: top 0.3s ease;
 }
-.header .menu-links .menu-link {
+.header .nav-links .nav-link {
   text-align: center;
 }
-.header .menu-links .menu-link a {
+.header .nav-links .nav-link a {
   display: inline-block;
   text-transform: capitalize;
   padding: 0.2em;
-  margin: 0.5em;
+  margin: 0.55em;
   text-align: center;
   font-weight: 500;
   font-size: 1.05em;
 }
-.header .menu-links .mood {
-  font-size: 1.25em;
+.header .nav-links .mood {
+  font-size: 1.2em;
 }
 @media (max-width: 767px) {
-  .header .menu-links {
-    padding: 1.3em;
+  .header .nav-links {
+    padding: 1.5em 0 1.3em;
     border-bottom-left-radius: 2em;
     border-bottom-right-radius: 2em;
-    box-shadow: 0px 2px 2px #54706529;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.1);
   }
-  .header .menu-links.open {
+  .header .nav-links.open {
     top: 50px;
   }
-  .header .menu-links .mood {
+  .header .nav-links .mood {
     position: absolute;
     top: 1.5em;
     right: 10%;
   }
 }
 @media (min-width: 768px) {
-  .header .menu-toggle {
+  .header .nav-toggle {
     display: none;
   }
-  .header .menu-links {
+  .header .nav-links {
     position: relative;
-    box-shadow: none;
     display: flex;
     padding: 0.8em;
   }
-  .header .menu-links ul {
+  .header .nav-links ul {
     display: flex;
   }
-  .header .menu-links .menu-link a {
-    margin-left: 2em;
+  .header .nav-links .nav-link:not(:last-child) a {
+    margin-right: 2em;
   }
 }
 /* End Header */
 
+/* Start Home */
+.home {
+  position: relative;
+  padding-top: 5em;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.home .home-content {
+  display: grid;
+  gap: 1em;
+}
+.home .home-text {
+  padding-top: 1em;
+}
+.home .home-head {
+  color: var(--constant-color);
+  font-size: 3em;
+  margin-bottom: 0.45em;
+  font-weight: 700;
+}
+.home .home-par {
+  color: var(--title-color);
+  font-size: 1.9em;
+  line-height: var(--line-height);
+  margin-bottom: 0.55em;
+  font-weight: 600;
+}
+.home .home-img {
+  width: 17em;
+  max-width: 100%;
+  margin: 2em auto;
+}
+@media (max-width: 320px) {
+  .home {
+    font-size: 13px;
+  }
+}
+@media (min-width: 768px) {
+  .home .home-content {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .home .home-text {
+    font-size: 19px;
+    padding-top: 0;
+    padding-bottom: 1em;
+  }
+  .home .home-img {
+    width: 80%;
+  }
+}
+/* End Home */
 /* Start */
 /* End */
-/* Start */
-/* End */
+footer {
+  height: 2000px;
+  background-color: var(--main-color);
+}
+
+/* Start Scroll top */
+.scroll-top {
+  display: inline-block;
+  padding: 0.3em 0.4em 0.2em;
+  background-color: #069c54;
+  position: fixed;
+  bottom: 0;
+  right: 1em;
+  font-size: 1.3em;
+  color: var(--main-color);
+  border-radius: 0.2em;
+  opacity: 0.7;
+  transition: 0.3s;
+  visibility: hidden;
+}
+.scroll-top.scrolltop-show {
+  visibility: visible;
+  bottom: 1.5em;
+}
+.scroll-top:hover {
+  opacity: 1;
+}
+/* End Scroll top */
+/* breaking point for all section */
+@media (max-width: 280px) {
+  section {
+    font-size: 10px !important;
+  }
+}
