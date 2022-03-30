@@ -426,7 +426,7 @@ a {
 }
 @media (max-width: 650px) {
   .menu .container {
-    grid-template-columns: repeat(2, minmax(10.3em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(10.3em, 1fr));
     gap: 0.5em;
     font-size: 14px;
   }
