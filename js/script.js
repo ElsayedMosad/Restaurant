@@ -7,14 +7,14 @@ const mood = document.querySelector(".mood");
 const toggleIcon = navLinks.querySelector("i");
 const moodIcon = mood.querySelector("i");
 const scrollTop = document.getElementById("scroll-top");
-console.log(navLinks);
-console.log(navLinks);
-console.log(allLinks);
-console.log(mood);
-console.log(body);
-console.log(toggleIcon);
-console.log(moodIcon);
-console.log(scrollTop);
+// console.log(navLinks);
+// console.log(navLinks);
+// console.log(allLinks);
+// console.log(mood);
+// console.log(body);
+// console.log(toggleIcon);
+// console.log(moodIcon);
+// console.log(scrollTop);
 // Add shadow to header on scroll
 function scrollHeader() {
   this.scrollY > 100

@@ -328,6 +328,7 @@ a {
   }
   .about .about-text {
     width: 100%;
+    font-size: 14px;
   }
 }
 /* End About */
@@ -357,6 +358,14 @@ a {
   color: var(--text-color);
   font-size: 1em;
   line-height: var(--line-height);
+}
+@media (max-width: 768px) {
+  .services .serv-head {
+    font-size: 1em;
+  }
+  .services .serv-par {
+    font-size: 0.85em;
+  }
 }
 /* End  Services */
 /* Start Menu */
