@@ -26,6 +26,7 @@
     <!-- Main css file -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
     <!-- Start Header -->
     <header class="header section">
@@ -42,11 +43,12 @@
           </button>
           <div class="nav-links">
             <ul>
-              <li class="nav-link"><a href="#" class="links">home</a></li>
-              <li class="nav-link"><a href="#" class="links">about</a></li>
-              <li class="nav-link"><a href="#" class="links">menu</a></li>
+              <li class="nav-link"><a href="#home" class="links">home</a></li>
+              <li class="nav-link"><a href="#about" class="links">about</a></li>
+              <li class="nav-link"><a href="#services" class="links">services</a></li>
+              <li class="nav-link"><a href="#menu" class="links">menu</a></li>
               <li class="nav-link">
-                <a href="#" class="links">contact us</a>
+                <a href="#contact" class="links">contact us</a>
               </li>
             </ul>
             <button class="mood" aria-label="Mood changer">
@@ -60,29 +62,124 @@
     <!-- End Header -->
     <!-- Start Home -->
     <section class="home section" id="home">
-      <div class="container home-content">
-        <div class="home-text">
-          <h1 class="home-head">Tasty food</h1>
-          <p class="home-par">
-            Try the best food of <br />
-            the week.
-          </p>
-          <button class="but" aria-label="open menu">view menu</button>
-        </div>
-        <div class="home-img">
-          <img src="img/home.png" alt="home image" />
+      <div class="container">
+        <div class="home-content">
+          <div class="home-text">
+            <h1 class="home-head">Tasty food</h1>
+            <p class="home-par">
+              Try the best food of <br />
+              the week.
+            </p>
+            <button class="but" aria-label="open menu">view menu</button>
+          </div>
+          <div class="home-img">
+            <img src="img/home.png" alt="home image" />
+          </div>
         </div>
       </div>
     </section>
     <!-- End Home -->
     <!-- Start About-->
-    <section class="about section" id="about"></section>
+    <section class="about section pad" id="about">
+      <div class="container">
+        <div class="about-img">
+          <img src="img/about.jpg" alt="about img" />
+        </div>
+        <div class="about-text">
+          <h3 class="about-head">About us</h3>
+          <h2 class="about-title">We cook the best tasty food</h2>
+          <p class="about-par">
+            We cook the best food in the entire city, with excellent customer
+            service, the best meals and at the best price, visit us.
+          </p>
+          <button class="but">Explore history</button>
+        </div>
+      </div>
+    </section>
     <!-- End About -->
     <!-- Start Services -->
-    <section class="services section"></section>
+    <section class="services section pad" id="services">
+      <div class="special-title">
+        <h4>Offering</h4>
+        <h2>Our amazing services</h2>
+      </div>
+      <div class="container">
+        <div class="services-box">
+          <div class="serv-img">
+            <img src="img/dish.png" alt="pizza image" />
+          </div>
+          <h3 class="serv-head">Excellent food</h3>
+          <p class="serv-par">
+            We offer our clients excellent quality services for many years, with
+            the best and delicious food in the city.
+          </p>
+        </div>
+        <div class="services-box">
+          <div class="serv-img">
+            <img src="img/pizza.png" alt="pizza image" />
+          </div>
+          <h3 class="serv-head">Fast food
+          </h3>
+          <p class="serv-par">
+            We offer our clients excellent quality services for many years, with
+            the best and delicious food in the city.
+          </p>
+        </div>
+        <div class="services-box">
+          <div class="serv-img">
+            <img src="img/delivery-truck.png" alt="pizza image" />
+          </div>
+          <h3 class="serv-head">Excellent food</h3>
+          <p class="serv-par">
+            We offer our clients excellent quality services for many years, with
+            the best and delicious food in the city.
+          </p>
+        </div>
+      </div>
+    </section>
     <!-- End Services -->
     <!-- Start Menu -->
-    <section class="menu section"></section>
+    <section class="menu section pad" id="menu">
+      <div class="special-title">
+        <h4>Offering</h4>
+        <h2>Our amazing services</h2>
+      </div>
+      <div class="container">
+        <div class="menu-item">
+          <img src="img/plate1.png" alt="menu plate1">
+          <h3 class="menu-head">
+            Barbecue salad
+          </h3>
+          <p>Delicious dish
+          </p>
+          <span class="value">$22.00
+          </span>
+          <button class="but"><i class='bx bx-cart-alt'></i></button>
+        </div>
+        <div class="menu-item">
+          <img src="img/plate2.png" alt="menu plate1">
+          <h3 class="menu-head">
+            Salad with fish
+          </h3>
+          <p>Delicious dish
+          </p>
+          <span class="value">$12.00
+          </span>
+          <button class="but"><i class='bx bx-cart-alt'></i></button>
+        </div>
+        <div class="menu-item">
+          <img src="img/plate3.png" alt="menu plate1">
+          <h3 class="menu-head">
+            Spinach salad
+          </h3>
+          <p>Delicious dish
+          </p>
+          <span class="value">$9.50
+          </span>
+          <button class="but"><i class='bx bx-cart-alt'></i></button>
+        </div>
+      </div>
+    </section>
     <!-- End Menu -->
     <footer></footer>
     <!-- Scroll top -->
