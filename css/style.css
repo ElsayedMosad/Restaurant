@@ -345,7 +345,6 @@ a {
   display: grid;
   gap: 25px;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-
 }
 .services .services-box {
   padding: 10px;
@@ -377,7 +376,7 @@ a {
   gap: 20px;
 }
 .menu .menu-item {
-  padding: 1rem 0.5rem;
+  padding: 16px 8px;
   background-color: var(--box-color);
   border-radius: 15px;
   position: relative;
@@ -403,13 +402,13 @@ a {
 }
 .menu .menu-head {
   color: var(--title-color);
-  font-size: 15px;
+  font-size: 0.9rem;
   margin: 30px 0 15px;
   font-weight: 400;
 }
 .menu .menu-item p {
   color: var(--text-color);
-  font-size: 14px;
+  font-size: 0.8rem;
   margin-bottom: 15px;
 }
 .menu .menu-item .value {
@@ -426,7 +425,7 @@ a {
 }
 @media (min-width: 768px) {
   .menu .container {
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 12rem));
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 15rem));
     justify-content: center;
     gap: 40px;
   }
@@ -481,21 +480,21 @@ footer {
 /* Start Scroll top */
 .scroll-top {
   display: inline-block;
-  padding: 0.3em 0.4em 0.2em;
+  padding: 6px 8px 4px;
   background-color: var(--constant-color);
   position: fixed;
   bottom: 0;
-  right: 1em;
-  font-size: 1.3em;
+  right: 16px;
+  font-size: 22px;
   color: var(--main-color);
-  border-radius: 0.3em;
+  border-radius: 6px;
   opacity: 0.7;
   transition: 0.3s;
   visibility: hidden;
 }
 .scroll-top.scrolltop-show {
   visibility: visible;
-  bottom: 1.5em;
+  bottom: 35px;
 }
 .scroll-top:hover {
   opacity: 1;
