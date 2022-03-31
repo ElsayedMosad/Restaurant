@@ -87,7 +87,7 @@ a {
   }
 }
 .pad {
-  padding-top: 45px;
+  padding-top: 55px;
   padding-bottom: 10px;
 }
 .but {
@@ -105,7 +105,7 @@ a {
   color: var(--text-color);
 }
 .links:hover {
-  color: var(--constant-pro-color);
+  color: var(--constant-color);
 }
 .special-title {
   text-align: center;

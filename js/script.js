@@ -38,7 +38,7 @@ function removeLink(link) {
 document.addEventListener("click", (e) => {
   if (e.target !== navLinks && e.target !== toggleNav) {
     if (navLinks.classList.contains("open")) {
-      navLinks.classList.remove("open")
+      navLinks.classList.remove("open");
     }
   }
 });
@@ -76,4 +76,30 @@ function scrollToTop() {
     ? scrollTop.classList.add("scrolltop-show")
     : scrollTop.classList.remove("scrolltop-show");
 }
-window.addEventListener('scroll', scrollToTop)
+window.addEventListener("scroll", scrollToTop);
+
+// ScrollReveal animation
+
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "30px",
+  duration: 2000,
+  reset: true,
+});
+
+sr.reveal(
+  `.home-text, 
+  .home-img, 
+  .about-img, 
+  .about-text, 
+  .services-box, 
+  .menu-item, 
+  .app-mobile, 
+  .app-data, 
+  .contact-data, 
+  .contact-but, 
+  .footer-box`,
+  {
+    interval: 200,
+  }
+);
