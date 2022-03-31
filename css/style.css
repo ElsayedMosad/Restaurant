@@ -373,10 +373,10 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
   justify-content: center;
-  gap: 10px;
+  gap: 20px 10px;
 }
 .menu .menu-item {
-  padding: 16px 8px;
+  padding: 5px 8px 16px;
   background-color: var(--box-color);
   border-radius: 15px;
   position: relative;
@@ -402,14 +402,14 @@ a {
 }
 .menu .menu-head {
   color: var(--title-color);
-  font-size: 0.9rem;
-  margin: 30px 0 15px;
+  font-size: 0.85rem;
+  margin: 8px 0 15px;
   font-weight: 400;
 }
 .menu .menu-item p {
   color: var(--text-color);
-  font-size: 0.8rem;
-  margin-bottom: 15px;
+  font-size: 0.75rem;
+  margin-bottom: 16px;
 }
 .menu .menu-item .value {
   font-size: 16px;
@@ -420,6 +420,7 @@ a {
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
   position: absolute;
+  padding: 10px;
   bottom: 0;
   right: 0;
 }
@@ -472,17 +473,15 @@ a {
 }
 /* End App */
 /* Start Contact */
-.contact .container{
+.contact .container {
   display: grid;
 }
-.contact .special-title {
-  padding: 0 2em;
-}
-.contact .special-title p{
+
+.contact .special-title p {
   color: var(--text-color);
   line-height: var(--line-height);
   margin: 20px 0;
-  font-size: 15px;
+  font-size: 13px;
 }
 .contact .contact-but {
   margin: auto;
@@ -495,6 +494,7 @@ a {
   }
   .contact .special-title {
     text-align: left;
+    padding: 0 2em;
   }
 }
 /* End Contact */
