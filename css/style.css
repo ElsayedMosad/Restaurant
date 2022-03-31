@@ -23,9 +23,9 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--main-color);
 }
-@media (max-width: 560px) {
-  body {
-    font-size: 13px;
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px;
   }
 }
 *,
@@ -379,7 +379,7 @@ a {
 .menu .container {
   padding-top: 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   justify-content: center;
   gap: 20px 10px;
 }
