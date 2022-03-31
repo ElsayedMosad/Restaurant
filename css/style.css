@@ -371,9 +371,9 @@ a {
 .menu .container {
   padding-top: 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
 .menu .menu-item {
   padding: 16px 8px;
@@ -471,10 +471,35 @@ a {
   }
 }
 /* End App */
-/* Start */
-/* End */
+/* Start Contact */
+.contact .container{
+  display: grid;
+}
+.contact .special-title {
+  padding: 0 2em;
+}
+.contact .special-title p{
+  color: var(--text-color);
+  line-height: var(--line-height);
+  margin: 20px 0;
+  font-size: 15px;
+}
+.contact .contact-but {
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .contact .container {
+    grid-template-columns: 1.55fr 1fr;
+    gap: 30px;
+    align-items: center;
+  }
+  .contact .special-title {
+    text-align: left;
+  }
+}
+/* End Contact */
 footer {
-  height: 2000px;
+  height: 200px;
   background-color: var(--main-color);
 }
 /* Start Scroll top */
