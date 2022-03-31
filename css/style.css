@@ -23,6 +23,11 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--main-color);
 }
+@media (max-width: 560px) {
+  body {
+    font-size: 13px;
+  }
+}
 *,
 ::after,
 ::before {
@@ -86,7 +91,7 @@ a {
   }
 }
 .pad {
-  padding-top: 55px;
+  padding-top: 45px;
   padding-bottom: 10px;
 }
 .but {
@@ -111,21 +116,24 @@ a {
   padding: 15px 0 10px;
 }
 .special-title h4 {
-  font-size: 16px;
+  font-size: 17px;
   color: var(--constant-color);
   margin-bottom: 16px;
   font-weight: 500;
 }
 .special-title h2 {
-  font-size: 26px;
+  font-size: 27px;
   color: var(--title-color);
   font-weight: 600;
 }
-/* @media (max-width: 768px) {
-  .special-title {
-    font-size: 13px;
+@media (max-width: 768px) {
+  .special-title h4 {
+    font-size: 14px;
   }
-} */
+  .special-title h2 {
+    font-size: 22px;
+  }
+}
 /* End classes */
 
 /* Start Header */
