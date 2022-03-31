@@ -23,11 +23,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--main-color);
 }
-@media (max-width: 768px) {
-  :root {
-    font-size: 14px;
-  }
-}
+
 *,
 ::after,
 ::before {
@@ -176,7 +172,7 @@ a {
   display: inline-block;
   text-transform: capitalize;
   padding: 5px;
-  margin: 5px;
+  margin: 6px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -379,7 +375,7 @@ a {
 .menu .container {
   padding-top: 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
   justify-content: center;
   gap: 20px 10px;
 }
@@ -410,13 +406,13 @@ a {
 }
 .menu .menu-head {
   color: var(--title-color);
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   margin: 8px 0 15px;
   font-weight: 400;
 }
 .menu .menu-item p {
   color: var(--text-color);
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   margin-bottom: 16px;
 }
 .menu .menu-item .value {
@@ -496,19 +492,61 @@ a {
 }
 @media (min-width: 768px) {
   .contact .container {
-    grid-template-columns: 1.55fr 1fr;
-    gap: 30px;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 35px;
     align-items: center;
   }
   .contact .special-title {
     text-align: left;
-    padding: 0 2em;
+    padding: 0 20px;
   }
 }
 /* End Contact */
-footer {
-  height: 200px;
-  background-color: var(--main-color);
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+.footer .footer-box {
+  padding: 5px;
+}
+.footer h2 a {
+  display: block;
+  font-size: 17px;
+  color: var(--constant-color);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.footer p {
+  font-size: 14px;
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+.footer .footer-social ul {
+  display: flex;
+}
+.footer .footer-social ul li a {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.footer .footer-box h3 {
+  margin-bottom: 16px;
+  font-size: 17px;
+  color: var(--title-color);
+  font-weight: 700;
+}
+.footer .footer-box li a {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+.footer .right {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  text-align: center;
+  padding: 20px 0;
+  color: var(--text-color);
 }
 /* Start Scroll top */
 .scroll-top {
@@ -533,9 +571,3 @@ footer {
   opacity: 1;
 }
 /* End Scroll top */
-/* breaking point for all section */
-@media (max-width: 280px) {
-  section {
-    font-size: 10px !important;
-  }
-}
