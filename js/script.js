@@ -76,9 +76,11 @@ window.addEventListener("scroll", () => {
     if (
       window.scrollY + 200 >= e.offsetTop &&
       window.scrollY + 200 < e.offsetTop + e.scrollHeight
-    ) {
+      ) {
       addActiveLink();
-      allLinks[index].classList.add("active");
+      if (!allLinks[index].classList.contains('active')) {
+        allLinks[index].classList.add("active");
+      }
     }
   });
 });
