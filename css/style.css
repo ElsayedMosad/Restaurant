@@ -424,9 +424,16 @@ a {
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
   position: absolute;
-  padding: 10px;
+  width: 40px;
+  height: 40px;
+  padding: 0px;
   bottom: 0;
   right: 0;
+  font-size: 18px;
+}
+.menu .menu-item .but i.bx-check {
+  font-size: 20px;
+  font-weight: 800;
 }
 @media (min-width: 768px) {
   .menu .container {
@@ -571,3 +578,16 @@ a {
   opacity: 1;
 }
 /* End Scroll top */
+
+
+html::-webkit-scrollbar {
+  width: 10px;
+  background-color: #27302cba;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--constant-pro-color);
+}
+html::-webkit-scrollbar-thumb:hover {
+  background-color: var(--constant-color);
+}

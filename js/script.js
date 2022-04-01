@@ -76,9 +76,9 @@ window.addEventListener("scroll", () => {
     if (
       window.scrollY + 200 >= e.offsetTop &&
       window.scrollY + 200 < e.offsetTop + e.scrollHeight
-      ) {
+    ) {
       addActiveLink();
-      if (!allLinks[index].classList.contains('active')) {
+      if (!allLinks[index].classList.contains("active")) {
         allLinks[index].classList.add("active");
       }
     }
@@ -92,6 +92,19 @@ function addActiveLink() {
   });
 }
 
+// sumbit add menu
+const valid = document.querySelectorAll(".valid");
+valid.forEach((e) => {
+  e.addEventListener("click", () => {
+    let icon = e.querySelector("i");
+    icon.classList.toggle("bx-cart-alt");
+    icon.classList.toggle("bx-check");
+    // setTimeout(function changeIconBut() {
+    //   icon.classList.toggle("bx-check");
+    //   icon.classList.toggle("bx-cart-alt");
+    // }, 2000);
+  });
+});
 // ScrollReveal animation
 const sr = ScrollReveal({
   origin: "top",
