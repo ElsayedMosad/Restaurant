@@ -7,14 +7,7 @@ const mood = document.querySelector(".mood");
 const toggleIcon = navLinks.querySelector("i");
 const moodIcon = mood.querySelector("i");
 const scrollTop = document.getElementById("scroll-top");
-// console.log(navLinks);
-// console.log(navLinks);
-// console.log(allLinks);
-// console.log(mood);
-// console.log(body);
-// console.log(toggleIcon);
-// console.log(moodIcon);
-// console.log(scrollTop);
+
 // Add shadow to header on scroll
 function scrollHeader() {
   this.scrollY > 100
@@ -42,9 +35,7 @@ document.addEventListener("click", (e) => {
     }
   }
 });
-// function checkClick (e) {
 
-// }
 // Stop propagation on nav
 navLinks.onclick = function (e) {
   e.stopPropagation();
@@ -70,7 +61,7 @@ mood.addEventListener("click", () => {
     localStorage.setItem("mood", "moon");
   }
 });
-// Play Scroll-top
+// Play Scroll-top shadow
 function scrollToTop() {
   this.scrollY > 500
     ? scrollTop.classList.add("scrolltop-show")
@@ -78,8 +69,28 @@ function scrollToTop() {
 }
 window.addEventListener("scroll", scrollToTop);
 
-// ScrollReveal animation
+// Add active class to right link on scroll sections
+const sections = document.querySelectorAll(".section");
+window.addEventListener("scroll", () => {
+  sections.forEach(function (e, index) {
+    if (
+      window.scrollY + 200 >= e.offsetTop &&
+      window.scrollY + 200 < e.offsetTop + e.scrollHeight
+    ) {
+      addActiveLink();
+      allLinks[index].classList.add("active");
+    }
+  });
+});
+function addActiveLink() {
+  allLinks.forEach((link) => {
+    if (link.classList.contains("active")) {
+      link.classList.remove("active");
+    }
+  });
+}
 
+// ScrollReveal animation
 const sr = ScrollReveal({
   origin: "top",
   distance: "30px",
